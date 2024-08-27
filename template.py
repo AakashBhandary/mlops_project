@@ -1,12 +1,16 @@
 import os
 from pathlib import Path
 
+package_name = "mongodb_connect"
+
 file_list = [
-    # for writing workflows and configurations for deployment
+    # for writing workflows and configurations for continuous integration and deployment
     ".github/workflows/.gitkeep", 
 
     # source code components
     "./src/__init__.py",
+    f"./src/{package_name}/__init__.py",
+    f"./src/{package_name}/mongo_crud.py",
     "./src/components/__init__.py",
     "./src/components/data_ingestion.py",
     "./src/components/data_transformation.py",
@@ -28,7 +32,9 @@ file_list = [
 
     # testing -> (unit and integration testing)
     "./tests/unit/__init__.py",
+    "./tests/unit/unit.py",
     "./tests/integration/__init__.py",
+    "./tests/integration/integration.py",
 
     # setup script
     "init_setup.sh",
