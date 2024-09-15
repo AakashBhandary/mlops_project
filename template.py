@@ -6,6 +6,8 @@ package_name = "mongodb_connect"
 file_list = [
     # for writing workflows and configurations for continuous integration and deployment
     ".github/workflows/.gitkeep", 
+    ".github/workflows/ci.yaml",
+    # ".github/workflows/python-publish.yaml",
 
     # source code components
     "./src/__init__.py",

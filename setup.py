@@ -17,11 +17,10 @@ def get_requirements(file_path:str) -> List[str]:
 """
 
 setup(
-    name = 'DiamondPricePrediction',
-    version = '0.0.1',
-    author = 'Aakash Bhandary',
-    author_email = 'aakashbhandary2024@gmail.com',
-    install_requires = ["scikit-learn", "pandas", "numpy"],
-    packages = find_packages()
-
+    name="GemstonePricePrediction",
+    version="0.0.1",
+    author="Aakash Bhandary",
+    author_email="aakashbhandary2024@gmail.com",
+    install_requires=["scikit-learn", "pandas", "numpy"],
+    packages=find_packages(),
 )
