@@ -1,12 +1,12 @@
 import os
 from pathlib import Path
 
-package_name = "mongodb_connect"
+package_name = "gemstone_price_predictor"
 
 file_list = [
     # for writing workflows and configurations for continuous integration and deployment
     ".github/workflows/.gitkeep", 
-    ".github/workflows/ci.yaml",
+    # ".github/workflows/ci.yaml",
     # ".github/workflows/python-publish.yaml",
 
     # source code components
@@ -30,7 +30,10 @@ file_list = [
 
     # logging and exceptions
     "./src/logger/logging.py",
+    "./src/logger/__init__.py",
     "./src/exception/exception.py",
+    "./src/exception/__init__.py",
+
 
     # testing -> (unit and integration testing)
     "./tests/unit/__init__.py",
